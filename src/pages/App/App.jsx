@@ -3,10 +3,11 @@ import { Routes, Route } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 import './App.css';
 import AuthPage from '../AuthPage/AuthPage';
-import NewOrderPage from '../NewOrderPage/NewOrderPage';
+import NewEventPage from '../NewEventPage/NewEventPage';
 import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
 import NavBar from '../../components/NavBar/NavBar';
 import SignUpForm from '../../components/SignUpForm/SignUpForm';
+import WelcomePage from '../WelcomePage/WelcomePage';
 
 
 export default function App() {
@@ -19,8 +20,9 @@ export default function App() {
       <>
       <NavBar setUser ={setUser} user = {user}/>
       <Routes>
-        <Route path="/orders/new" element={<NewOrderPage />} />
+        <Route path="/events/new" element={<NewEventPage />} />
         <Route path="/orders" element={<OrderHistoryPage />} />
+        <Route path="/" element={<WelcomePage />} />
       </Routes>
       </>
       :
