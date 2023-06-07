@@ -4,6 +4,7 @@ const favicon = require('serve-favicon');
 const logger = require('morgan');
 require('dotenv').config();
 require('./config/database');
+const ensureLoggedIn = require('./config/ensureLoggedIn');
 
 const app = express();
 
@@ -13,6 +14,8 @@ app.use(favicon(path.join(__dirname, 'build', 'favicon.ico')));
 app.use(express.static(path.join(__dirname, 'build')));
 app.use(require('./config/checkToken'));
 app.use('/api/users', require('./routes/api/users'));
+app.use('/api/events', require('./routes/api/events'))
+app.use('/api/events',ensureLoggedIn, require('./routes/api/events'));
 // app.use((req, res, next)=>{
 //   if (req.headers){
 //     console.log(req.headers)
