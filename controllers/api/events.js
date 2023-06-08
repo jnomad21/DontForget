@@ -11,7 +11,7 @@ module.exports = {
 async function index(req, res){
     try{
         const userId = req.user._id;
-        const events = await Event.find({ uploaded_by: userId });        
+        const events = await Event.find({ uploaded_by: userId }).sort('date');        
         res.status(200).json(events)
     }catch(err){
         res.status(400).json(err)

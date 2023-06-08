@@ -1,12 +1,13 @@
 import { useState} from 'react'
 import EditEventForm from './EditEventForm/EditEventForm'
+import EventDate from '../EventDate/EventDate';
 
 
 
 export default function EventDetail({event, handleDelete, setEvent}){
     const [editFormIsOpen, setEditFormIsOpen] = useState(false)
     const eventDate = new Date(event.date);
-    const monthName = eventDate.toLocaleString(undefined, { month: 'long' });
+    const monthName = eventDate.toLocaleString(undefined, { month: 'long', });
     
     function toggleEditForm(){
         setEditFormIsOpen((prevState) => {
@@ -19,7 +20,7 @@ export default function EventDetail({event, handleDelete, setEvent}){
             <div>
                 <h3>{event.event}</h3>
                 <h4>Category: {event.category}</h4>
-                <h4>Date: {event.date}</h4>
+                <h4>Date: <EventDate event={eventDate} /></h4>
                 <h4>Time: {event.time}</h4>
                 <h4>Company/Person Name: {event.name}</h4>
                 <h4>Phone #: {event.phone_number}</h4>
