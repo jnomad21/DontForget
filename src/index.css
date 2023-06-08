@@ -158,3 +158,9 @@ nav{
 nav a{
   color: white;
 }
+.delete-button{
+  height: 30px;
+  width: 30px;
+  background-color: red;
+  font-size: 12px;
+}
