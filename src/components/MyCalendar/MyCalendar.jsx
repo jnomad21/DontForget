@@ -3,6 +3,7 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 import { useEffect, useState } from "react";
 import { eventsIndexRequest } from "../../utilities/events-api";
 import moment from "moment";
+import { Link } from "react-router-dom";
 
 const localizer = momentLocalizer(moment);
 
@@ -17,14 +18,19 @@ export default function MyCalendar() {
     getEvents();
   }, []);
 
+  const handleEventClick = (events) => {
+    window.location.href = `/events/${events._id}`;
+        }
   return (
     <Calendar
       localizer={localizer}
       events={events}
       startAccessor="date"
       endAccessor="date"
-      titleAccessor="event" // Use titleAccessor to specify the title field
+      titleAccessor="event" 
       style={{ height: "700px" }}
+      onSelectEvent={handleEventClick}
+      
     />
   );
 }
