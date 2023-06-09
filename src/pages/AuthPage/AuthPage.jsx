@@ -1,15 +1,16 @@
 import SignUpForm from '../../components/SignUpForm/SignUpForm';
 import LoginForm from '../../components/LoginForm/LoginForm';
+import './AuthPage.css'
 
 export default function AuthPage({setUser}) {
     
   return (
     <>
-    <main>
-      <h1>AuthPage</h1>
+    <body style = {{backgroundColor: `rgb(182, 182, 218)`}}>
+      <h1 id='AuthPageH1'>Register/LogIn</h1>
       <SignUpForm setUser ={setUser}/>
       <LoginForm setUser ={setUser}/>
-    </main>
+    </body>
     </>
   );
 }

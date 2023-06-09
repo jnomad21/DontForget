@@ -152,6 +152,7 @@ button[type="submit"] {
 }
 nav{
   background-color: blue;
+  
   color: white;
   height: 50px;
 }
@@ -159,8 +160,8 @@ nav a{
   color: white;
 }
 .delete-button{
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
   background-color: red;
-  font-size: 12px;
+  font-size: 10px;
 }

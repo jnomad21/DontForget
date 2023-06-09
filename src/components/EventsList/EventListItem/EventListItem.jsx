@@ -1,13 +1,15 @@
 import { Link } from 'react-router-dom';
 import EventDate from '../../EventDate/EventDate';
-import { deleteEventRequest } from '../../../utilities/events-api';
 
-export default function EventsListItem({event}){
+
+export default function EventsListItem({event, handleDelete}){
     const eventDate = new Date(event.date);
     const monthName = eventDate.toLocaleString(undefined, { month: 'long' });
-    async function handleDelete(e){
-        const deleteResponse = await deleteEventRequest(event._id);
+    
+    function deleteThisItem(){
+        handleDelete(event._id)
     }
+
     return(
         <>
         
@@ -17,7 +19,7 @@ export default function EventsListItem({event}){
                 {event.event} 
             </Link><br />
             <EventDate event={eventDate}/>
-            <button className="delete-button" onClick={handleDelete}>X</button>
+            <button className="delete-button" onClick={deleteThisItem}>X</button>
             
         </p>
 

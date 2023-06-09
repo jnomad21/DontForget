@@ -1,0 +1,17 @@
+.form-container{
+    background-color: slategray;
+}
+
+.form-container label{
+    color: rgb(182, 182, 218);
+    font-size: 36px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.form-container button{
+    background-color: rgb(2, 80, 4);
+}
+
+.form-container form:invalid  button{
+    background-color: rgb(202, 5, 38);
+}

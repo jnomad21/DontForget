@@ -7,8 +7,12 @@ export default function EventDate({event}){
   
     const formattedDate = event.toLocaleDateString(undefined, dateOptions);
   
-    return <div>{formattedDate}</div>;
-  };
+    return (
+      <>
+      {formattedDate}
+      </>
+  )
+};
   
  
   
