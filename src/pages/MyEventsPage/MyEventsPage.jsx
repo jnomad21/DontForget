@@ -14,7 +14,7 @@ export default function MyEventsPage(){
 
     async function handleDelete(eventToDelete){
         await deleteEventRequest(eventToDelete);
-        const updatedEvents = events.filter(event => event.id !== eventToDelete.id);
+        const updatedEvents = events.filter(event => event._id !== eventToDelete);
         setEvents(updatedEvents);
     } 
   
