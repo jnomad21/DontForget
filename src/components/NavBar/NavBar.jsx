@@ -12,6 +12,8 @@ export default function NavBar({setUser, user}){
         <nav>
         <Link to="/events">Upcoming Events</Link>
         &nbsp; | &nbsp;
+        <Link to="/events/calendar">My Calendar</Link>
+        &nbsp; | &nbsp;
         <Link to="/events/new">New Event</Link>
         &nbsp;| &nbsp;<span>Welcome, {user.name}</span>
         &nbsp;| &nbsp;<Link to="" onClick={handleLogOut}>Log Out</Link>

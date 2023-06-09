@@ -2,6 +2,7 @@ import { eventsIndexRequest, deleteEventRequest } from '../../utilities/events-a
 import { useEffect, useState } from 'react'
 import EventsList from '../../components/EventsList/EventsList';
 
+
 export default function MyEventsPage(){
     const [events, setEvents] = useState([])
     useEffect(()=>{
@@ -23,6 +24,8 @@ export default function MyEventsPage(){
         <>
         <h1>Upcoming Events</h1>
         <EventsList events={events} handleDelete={handleDelete}/>
+
+        
         </>
     )
 }

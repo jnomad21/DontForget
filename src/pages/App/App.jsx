@@ -9,6 +9,7 @@ import SignUpForm from '../../components/SignUpForm/SignUpForm';
 import WelcomePage from '../WelcomePage/WelcomePage';
 import MyEventsPage from '../MyEventsPage/MyEventsPage';
 import EventDetailPage from '../EventDetailPage/EventDetailPage'
+import MyCalendar from '../../components/MyCalendar/MyCalendar';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -24,6 +25,7 @@ export default function App() {
         <Route path="/events" element={<MyEventsPage />} />
         <Route path="/" element={<WelcomePage />} />
         <Route path="/events/:eventId" element={<EventDetailPage />} />
+        <Route path="/events/calendar" element={<MyCalendar />} />
 
       </Routes>
       </>
