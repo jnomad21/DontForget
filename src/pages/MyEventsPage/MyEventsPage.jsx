@@ -23,8 +23,9 @@ export default function MyEventsPage(){
     return(
         <>
         <h1>Upcoming Events</h1>
+        <div className="myEvents">
         <EventsList events={events} handleDelete={handleDelete}/>
-
+        </div>
         
         </>
     )

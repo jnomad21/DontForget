@@ -22,7 +22,7 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--white);
+  background: linear-gradient( rgba(226,225,231,1) 0%, rgba(255,253,253,1) 30%, rgba(255,253,253,1) 50%, rgba(255,253,253,1) 70%, rgba(226,225,231,1) 100%);
   height: 100vh;
 }
 
@@ -190,7 +190,17 @@ button{
 }
 .indexBox{
   background-color: rgb(60, 130, 192, .2);
+  width: 50vw;
+  align-items: center;
+  position: relative;
+  border-radius: 20px;
+  
 }
 h1{
   font-family: 'Kalam', cursive;
+}
+.myEvents{
+  position: relative;
+  display: flex;
+  justify-content: center;
 }

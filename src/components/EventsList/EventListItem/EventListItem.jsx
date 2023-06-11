@@ -12,7 +12,7 @@ export default function EventsListItem({event, handleDelete}){
 
     return(
         <>
-        <div className='indexBox'>
+        <div >
         <h2>{monthName}</h2>
         <p>
             <Link to={`/events/${event._id}`}>

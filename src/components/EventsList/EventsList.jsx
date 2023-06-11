@@ -7,7 +7,9 @@ export default function EventsList({events, handleDelete}){
     
     return (
         <>
+        <div className="indexBox">
             {eventsComponents}
+        </div>
             
         </>
     )

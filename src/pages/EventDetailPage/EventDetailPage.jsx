@@ -34,7 +34,7 @@ async function handleDelete(e){
 }
 return (
     <>
-    <h1>Here's an event</h1>
+    <h1>Don't Forget your event!</h1>
     { loading ? <p>Loading....</p>
     :
     error ? <p>{error}</p> 
