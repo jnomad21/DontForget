@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import * as userService from '../../utilities/users-service';
+import './NavBar.css'
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Racing+Sans+One&display=swap" rel="stylesheet"></link>
 
 export default function NavBar({setUser, user}){
   function handleLogOut() {
@@ -9,15 +11,23 @@ export default function NavBar({setUser, user}){
     setUser(null);
   }
     return(
-        <nav>
-        <Link to="/events">Upcoming Events</Link>
-        &nbsp; | &nbsp;
-        <Link to="/events/calendar">My Calendar</Link>
-        &nbsp; | &nbsp;
-        <Link to="/events/new">New Event</Link>
-        &nbsp;| &nbsp;<span>Welcome, {user.name}</span>
-        &nbsp;| &nbsp;<Link to="" onClick={handleLogOut}>Log Out</Link>
+      <>
+      <nav>
+        <div>
+          <Link className='Logo' to="/"><h4 id='logo'>DontForget</h4></Link>
+        </div>
+        <ul className='navMid'>
+          <li><Link className="link" to="/events">Upcoming Events</Link></li>
+          <li><Link className="link" to="/events/calendar">My Calendar</Link></li>
+          <li><Link className="link" to="/events/new">New Event</Link></li>
+          </ul>
+        <ul className="navRight">
+          <li><span className="link">Welcome, {user.name}</span></li>
+          <li><Link className="link"  to="" onClick={handleLogOut}>Log Out</Link></li>
+          </ul>
+        
       </nav>
+      </>
     );
     
 }

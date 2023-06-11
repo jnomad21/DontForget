@@ -3,15 +3,15 @@
 }
 
 .form-container label{
-    color: rgb(182, 182, 218);
+    color: rgb(60, 130, 192, .2);
     font-size: 36px;
     text-shadow: 1px 1px 1px black;
 }
 
 .form-container button{
-    background-color: rgb(2, 80, 4);
+    background-color: rgb(60, 130, 192, .2);
 }
 
 .form-container form:invalid  button{
-    background-color: rgb(202, 5, 38);
+    background-color: rgb(60, 130, 192, .2);
 }

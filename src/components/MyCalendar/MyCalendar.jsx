@@ -22,15 +22,16 @@ export default function MyCalendar() {
     window.location.href = `/events/${events._id}`;
         }
   return (
-    <Calendar
+    <>
+    <h1>My Calendar</h1>
+    <Calendar 
       localizer={localizer}
       events={events}
       startAccessor="date"
       endAccessor="date"
       titleAccessor="event" 
-      style={{ height: "700px" }}
-      onSelectEvent={handleEventClick}
-      
-    />
+      style={{ height: "600px" }}
+      onSelectEvent={handleEventClick}/>
+      </>
   );
 }
