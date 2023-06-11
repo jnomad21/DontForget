@@ -24,6 +24,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient( rgba(226,225,231,1) 0%, rgba(255,253,253,1) 30%, rgba(255,253,253,1) 50%, rgba(255,253,253,1) 70%, rgba(226,225,231,1) 100%);
   height: 100vh;
+  background-image: url(https://www.atlantawatershed.org/wp-content/uploads/2019/03/2017-footer-background-SMALLER.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100vw 20vh;
+  
+  
+}
+
+img{
+  position: fixed;
+  bottom:0;
+  width: 100vw;
 }
 
 code {
