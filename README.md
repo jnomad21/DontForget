@@ -21,5 +21,6 @@ It also has a calendar view if you want to see your events listed out monthly, w
 - SMS/Email alert system for when events are nearing
 
 ### Links:
-([https://dontforget.herokuapp.com])
-([https://trello.com/b/5XlF2EFg/dontforget])
+[DontForget](https://dontforget.herokuapp.com)
+
+[DontForget Trello Board](https://trello.com/b/5XlF2EFg/dontforget)
