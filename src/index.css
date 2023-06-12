@@ -181,6 +181,8 @@ nav a{
 .rbc-calendar{
   position: relative;
   top:3vh;
+  width: 95vw;
+  left: 2vw;
 }
 
 form{
