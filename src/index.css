@@ -185,7 +185,7 @@ nav a{
 
 form{
   width: 80vw;
-  left: 10vw;
+  left: 20vw;
   position: relative;
   
 }
@@ -194,7 +194,11 @@ label{
   font-style: italic;
 }
 input{
-  background-color: rgb(60, 130, 192, .2);
+  background-color: rgba(226,225,231,1);
+  width: 30vw;
+}
+select{
+  width: 30vw;
 }
 button{
   background-color: rgb(60, 130, 192, .2);
@@ -235,4 +239,9 @@ h1{
 .welcome li{
   padding: 5px;
   list-style: none;
+}
+
+#newEventButton{
+  position: relative;
+  left: 25vw;
 }

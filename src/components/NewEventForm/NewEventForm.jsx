@@ -44,6 +44,7 @@ export default function NewEventForm(){
         <>
         
         { error && <p>{JSON.stringify(error)}</p>}
+        <h4><span style={{ color: 'red' }}>*</span> Required Field</h4>
         <form onSubmit={handleSubmit}>
                 <label htmlFor="event">Event:<span style={{ color: 'red' }}>*</span></label>
                 <input type="text" id="event" ref={eventRef} />
@@ -77,9 +78,9 @@ export default function NewEventForm(){
                 </select>
                 <label htmlFor="notes">Notes:</label>
                 <input type="textarea" rows="5" cols="50" id="notes" ref={notesRef}/>
-                <button>Create the Event</button>
+                <button id="newEventButton">Create the Event</button>
             </form>
-            <h4><span style={{ color: 'red' }}>*</span> Required Field</h4>
+            
         </>
     )
 }
