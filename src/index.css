@@ -216,3 +216,23 @@ h1{
   display: flex;
   justify-content: center;
 }
+
+.welcomeUL{
+  width: 40vw;
+  display: grid;
+  align-content: center;
+  list-style: none;
+  
+}
+
+.welcome{
+  display: grid;
+  justify-items: center;
+  list-style: none;
+
+}
+
+.welcome li{
+  padding: 5px;
+  list-style: none;
+}
