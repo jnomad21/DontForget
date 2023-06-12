@@ -245,3 +245,8 @@ h1{
   position: relative;
   left: 25vw;
 }
+.authButton{
+  width: 40vw;
+  left: 4vw;
+  position: relative;
+}
