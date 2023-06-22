@@ -16,7 +16,7 @@ return(
         <h3>It also has a calendar view if you want to see your events listed out monthly, weekly, daily, etc.</h3>
         <br />
         <br />
-        <h2 style={{color:'red'}}>Coming Soon</h2>
+        <h2 style={{color:'red'}}>🚧Coming Soon🚧</h2>
             <ul>
                 <li>Sortable filtering by category</li>
                 <li>SMS/Email alert system as event approaches</li>
