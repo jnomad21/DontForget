@@ -11,6 +11,7 @@ import MyEventsPage from '../MyEventsPage/MyEventsPage';
 import EventDetailPage from '../EventDetailPage/EventDetailPage'
 import MyCalendar from '../../components/MyCalendar/MyCalendar';
 
+
 export default function App() {
   const [user, setUser] = useState(getUser());
 

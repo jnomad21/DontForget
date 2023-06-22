@@ -252,3 +252,17 @@ h1{
   left: 4vw;
   position: relative;
 }
+#left-side{
+  position: fixed;
+  left: 1vw;
+  width: 22vw;
+  top: 16vh;
+  height: 61vh;
+}
+#right-side{
+  position: fixed;
+  right: 1vw;
+  width: 22vw;
+  top: 16vh;
+  height: 61vh;
+}
