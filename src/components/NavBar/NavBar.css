@@ -58,7 +58,7 @@ nav{
 }
 
 
-li:hover{
+nav li:hover{
     background-color: rgb(60, 130, 192);
     transition: .7s;
     border-radius: 12px;
