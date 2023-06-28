@@ -36,7 +36,7 @@ export default function App() {
       <>
       <UnLoggedWelcomePage/>
       <Routes>
-        <Route path="/auth" element={<AuthPage />} />
+        <Route path="/" element={<AuthPage setUser={setUser}/>} />
       </Routes>
       </>
     }
