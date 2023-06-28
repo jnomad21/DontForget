@@ -4,4 +4,8 @@
     color: slategray;
     text-shadow: 1px 1px 1px black;
 }
+#auth{
+    display: flex;
+    justify-content: space-around;
+}
 

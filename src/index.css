@@ -266,3 +266,46 @@ h1{
   top: 16vh;
   height: 61vh;
 }
+.sign-up .form-container {
+  position: relative
+  }
+
+.sign-up .form-container button {
+  position: relative;
+  left: -10%;
+  width: 20%
+  }
+.sign-up .form-container input{
+  position: relative;
+  width: 30%;
+  left: -45%;
+}
+.sign-up .form-container label{
+  position: relative;
+  left: -100%
+  }
+
+.sign-up{
+  width: 45vw
+}
+.login{
+  width: 45vw;
+}
+.login .form-container {
+  position: relative
+  }
+
+.login .form-container button {
+  position: relative;
+  left: -10%;
+  width: 20%
+  }
+.login .form-container input{
+  position: relative;
+  width: 30%;
+  left: -45%;
+}
+.login .form-container label{
+  position: relative;
+  left: -100%
+  }
