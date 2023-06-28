@@ -9,10 +9,10 @@ export default function AuthPage({setUser}) {
     <body>
       <h1 id='AuthPageH1'>Register/LogIn</h1>
       <div id='auth'>
-        <div class='sign-up'>
+        <div className='sign-up'>
           <SignUpForm setUser ={setUser}/>
         </div>
-        <div class='login'>
+        <div className='login'>
           <LoginForm setUser ={setUser}/>
         </div>
       </div>
