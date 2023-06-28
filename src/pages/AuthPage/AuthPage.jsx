@@ -8,8 +8,14 @@ export default function AuthPage({setUser}) {
     <>
     <body>
       <h1 id='AuthPageH1'>Register/LogIn</h1>
-      <SignUpForm setUser ={setUser}/>
-      <LoginForm setUser ={setUser}/>
+      <div id='auth'>
+        <div class='sign-up'>
+          <SignUpForm setUser ={setUser}/>
+        </div>
+        <div class='login'>
+          <LoginForm setUser ={setUser}/>
+        </div>
+      </div>
     </body>
     </>
   );

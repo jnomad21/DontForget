@@ -10,6 +10,7 @@ import WelcomePage from '../WelcomePage/WelcomePage';
 import MyEventsPage from '../MyEventsPage/MyEventsPage';
 import EventDetailPage from '../EventDetailPage/EventDetailPage'
 import MyCalendar from '../../components/MyCalendar/MyCalendar';
+import UnLoggedWelcomePage from '../WelcomePage/UnLoggedWelcomePage';
 
 
 export default function App() {
@@ -27,11 +28,17 @@ export default function App() {
         <Route path="/" element={<WelcomePage />} />
         <Route path="/events/:eventId" element={<EventDetailPage />} />
         <Route path="/events/calendar" element={<MyCalendar />} />
+        
 
       </Routes>
       </>
       :
-      <AuthPage setUser={setUser}/>
+      <>
+      <UnLoggedWelcomePage/>
+      <Routes>
+        <Route path="/auth" element={<AuthPage />} />
+      </Routes>
+      </>
     }
   </main>
   );
