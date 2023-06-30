@@ -310,5 +310,7 @@ h1{
   left: -100%
   }
   #unloggedForms{
+    position: relative;
     display: flex;
+    left: 5%;
   }
