@@ -11,6 +11,7 @@ import MyEventsPage from '../MyEventsPage/MyEventsPage';
 import EventDetailPage from '../EventDetailPage/EventDetailPage'
 import MyCalendar from '../../components/MyCalendar/MyCalendar';
 import UnLoggedWelcomePage from '../WelcomePage/UnLoggedWelcomePage';
+import UnloggedNavBar from '../../components/NavBar/UnloggedNavBar';
 
 
 export default function App() {
@@ -34,6 +35,7 @@ export default function App() {
       </>
       :
       <>
+      <UnloggedNavBar/>
       <UnLoggedWelcomePage/>
       <Routes>
         <Route path="/" element={<AuthPage setUser={setUser}/>} />
