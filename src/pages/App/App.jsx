@@ -39,8 +39,8 @@ export default function App() {
       <UnloggedNavBar/>
       <UnLoggedWelcomePage/>
       <div id="unloggedForms">
-      <SignUpForm/>
-      <LoginForm/>
+      <SignUpForm setUser={setUser}/>
+      <LoginForm setUser={setUser}/>
       </div>
       {/* <Routes>
         <Route path="/" element={<AuthPage setUser={setUser}/>} />
