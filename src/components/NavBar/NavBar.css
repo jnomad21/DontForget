@@ -15,12 +15,14 @@ nav{
     
 }
  .navMid{
+    position: relative;
     display: flex;
     list-style: none;
     justify-content: space-around;
     width: 30%;
     font-size: 16px;
     text-decoration: none;
+    left: 5%
 }
 .Logo{
     display: flex;

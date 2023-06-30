@@ -1,0 +1,7 @@
+#unloggedNavRight{
+  display: hidden
+}
+.unloggedNav{
+  position: relative;
+  left: 5%
+}
