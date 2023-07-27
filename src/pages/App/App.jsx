@@ -42,8 +42,8 @@ export default function App() {
       <div id="unloggedForms">
       <SignUpForm setUser={setUser}/>
       <LoginForm setUser={setUser}/>
-      <DemoLogIn/>
       </div>
+      <DemoLogIn/>
       {/* <Routes>
         <Route path="/" element={<AuthPage setUser={setUser}/>} />
       </Routes> */}

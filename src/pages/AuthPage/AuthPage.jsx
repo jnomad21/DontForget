@@ -2,6 +2,7 @@ import SignUpForm from '../../components/SignUpForm/SignUpForm';
 import LoginForm from '../../components/LoginForm/LoginForm';
 import './AuthPage.css'
 
+
 export default function AuthPage({setUser}) {
     
   return (
@@ -15,6 +16,7 @@ export default function AuthPage({setUser}) {
         <div className='login'>
           <LoginForm setUser ={setUser}/>
         </div>
+        
       </div>
     </body>
     </>
