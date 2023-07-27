@@ -13,6 +13,7 @@ import MyCalendar from '../../components/MyCalendar/MyCalendar';
 import UnLoggedWelcomePage from '../WelcomePage/UnLoggedWelcomePage';
 import UnloggedNavBar from '../../components/NavBar/UnloggedNavBar';
 import LoginForm from '../../components/LoginForm/LoginForm';
+import DemoLogIn from '../../components/DemoLogIn';
 
 
 export default function App() {
@@ -41,6 +42,7 @@ export default function App() {
       <div id="unloggedForms">
       <SignUpForm setUser={setUser}/>
       <LoginForm setUser={setUser}/>
+      <DemoLogIn/>
       </div>
       {/* <Routes>
         <Route path="/" element={<AuthPage setUser={setUser}/>} />
