@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 import './App.css';
-import AuthPage from '../AuthPage/AuthPage';
 import NewEventPage from '../NewEventPage/NewEventPage';
 import NavBar from '../../components/NavBar/NavBar';
 import SignUpForm from '../../components/SignUpForm/SignUpForm';
@@ -13,7 +12,7 @@ import MyCalendar from '../../components/MyCalendar/MyCalendar';
 import UnLoggedWelcomePage from '../WelcomePage/UnLoggedWelcomePage';
 import UnloggedNavBar from '../../components/NavBar/UnloggedNavBar';
 import LoginForm from '../../components/LoginForm/LoginForm';
-import DemoLogIn from '../../components/DemoLogIn';
+import DemoLogIn from '../../components/DemoLogin/DemoLogIn';
 
 
 export default function App() {

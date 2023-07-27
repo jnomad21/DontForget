@@ -1,3 +1,5 @@
+import './DemoLogin.css'
+
 export default function DemoLogIn(){
     return(
         <>
