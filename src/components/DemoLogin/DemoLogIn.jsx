@@ -6,7 +6,7 @@ export default function DemoLogIn(){
         <div id='demo-login'>
         <h4>To view a Demo of the app, please use the following login <br />
         Email: john@doe.com <br />
-        Password: Password
+        Password: password
         </h4>
         </div>
         </>
